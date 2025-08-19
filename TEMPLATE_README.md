@@ -1,4 +1,4 @@
-# About `template-component`
+# About `bq27427`
 
 This is a template repository for `esp-idf-lib` component. The repository is
 intended to be cloned to create new component quickly.
@@ -9,7 +9,7 @@ intended to be cloned to create new component quickly.
 > will NOT work.
 
 The up-to-date version of this document can be found at
-[template-component](https://github.com/esp-idf-lib/template-component/tree/main).
+[bq27427](https://github.com/esp-idf-lib/bq27427/tree/main).
 
 <!-- vim-markdown-toc GFM -->
 
@@ -77,7 +77,7 @@ working.
 cd examples/example1
 ```
 
-Edit `main/idf_component.yml` by replacing `template-component` under
+Edit `main/idf_component.yml` by replacing `bq27427` under
 `dependencies` with the component name.
 
 ```console
@@ -91,7 +91,7 @@ vim main/idf_component.yml
  version: 1.0.0
  description: Example 1
  dependencies:
--  esp-idf-lib/template-component:
+-  esp-idf-lib/bq27427:
 +  esp-idf-lib/foo:
      version: "~1.0.0"
      override_path: ../../../
@@ -107,21 +107,21 @@ The build should succeed.
 
 ### Starting development
 
-Find and replace ALL occurrences of `template-component` in the repository
+Find and replace ALL occurrences of `bq27427` in the repository
 with the component name.
 
 If you have [ack] installed, here is the command to list all the files to
 modify:
 
 ```console
-ack --files-with-matches --ignore-dir build template-component .
+ack --files-with-matches --ignore-dir build bq27427 .
 ```
 
 Next, rename template source files.
 
 ```console
-mv template-component.c foo.c
-mv include/template-component.h include/foo.h
+mv bq27427.c foo.c
+mv include/bq27427.h include/foo.h
 ```
 
 Commit and push all files.
@@ -216,7 +216,7 @@ gh api --method POST /repos/esp-idf-lib/${REPO}/environments/github-pages/deploy
 To see the `branch_policies`, run:
 
 ```sh
-gh api /repos/esp-idf-lib/template-component/environments/github-pages/deployment-branch-policies
+gh api /repos/esp-idf-lib/bq27427/environments/github-pages/deployment-branch-policies
 ```
 
 The output should be like below:

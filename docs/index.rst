@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Foo's documentation!
+Welcome to bq27427's documentation!
 ===============================
 
 .. doxygenfile:: bq27427.h
